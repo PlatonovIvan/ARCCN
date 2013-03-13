@@ -1,0 +1,1254 @@
+Характеристики коммутатора
+NEC 5800
+120000 правил потоков
+размер TCAM
+
+Работа самого анализатора для большого кол-ва правил (5000) занимает очень продолжительное время.
+
+Время, необходимое на установку правил фильтрации
+
+
+Пример - 
+100 шт. - 0.0249650478363     0.0260767936707    0.0260767936707
+200 шт. - 0.0456109046936     0.100342035294      0.101869106293
+300 шт. - 0.0678517818451
+400 шт. - 0.0836851596832 
+500 шт.
+600 шт.
+700 шт.
+
+
+
+
+Время прохождения пинга в лучшем случае (матчинг по первому правилу) -
+
+
+С установкой потоков
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=251 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=0.226 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=0.236 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=0.229 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=0.213 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=0.173 ms
+
+
+Без установки потоков
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=29.9 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=57.2 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=39.0 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=37.6 ms
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=0.244 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=0.238 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=0.199 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=0.202 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=0.249 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=0.214 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=0.197 ms
+64 bytes from 192.168.1.2: icmp_req=8 ttl=64 time=0.213 ms
+64 bytes from 192.168.1.2: icmp_req=9 ttl=64 time=0.202 ms
+64 bytes from 192.168.1.2: icmp_req=10 ttl=64 time=0.210 ms
+64 bytes from 192.168.1.2: icmp_req=11 ttl=64 time=0.207 ms
+64 bytes from 192.168.1.2: icmp_req=12 ttl=64 time=0.206 ms
+64 bytes from 192.168.1.2: icmp_req=13 ttl=64 time=0.204 ms
+64 bytes from 192.168.1.2: icmp_req=14 ttl=64 time=0.200 ms
+
+500 правил++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=9536 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=8530 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=7522 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=6515 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=5509 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=4502 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=3497 ms
+64 bytes from 192.168.1.254: icmp_req=9 ttl=64 time=2525 ms
+64 bytes from 192.168.1.254: icmp_req=10 ttl=64 time=1711 ms
+64 bytes from 192.168.1.254: icmp_req=11 ttl=64 time=704 ms
+64 bytes from 192.168.1.254: icmp_req=12 ttl=64 time=43.9 ms
+64 bytes from 192.168.1.254: icmp_req=13 ttl=64 time=10.4 ms
+64 bytes from 192.168.1.254: icmp_req=14 ttl=64 time=33.8 ms
+
+300 правил++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PING 192.168.20.254 (192.168.20.254) 56(84) bytes of data.
+From 192.168.20.2 icmp_seq=9 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=10 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=11 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=12 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=13 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=14 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=15 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=16 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=17 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=18 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=19 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=20 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=21 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=22 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=23 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=24 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=25 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=26 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=27 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=28 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=29 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=30 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=31 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=32 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=33 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=34 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=35 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=36 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=37 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=38 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=39 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=40 Destination Host Unreachable
+From 192.168.20.2 icmp_seq=41 Destination Host Unreachable
+64 bytes from 192.168.20.254: icmp_req=2 ttl=64 time=40805 ms
+64 bytes from 192.168.20.254: icmp_req=3 ttl=64 time=39798 ms
+64 bytes from 192.168.20.254: icmp_req=4 ttl=64 time=38792 ms
+64 bytes from 192.168.20.254: icmp_req=5 ttl=64 time=37791 ms
+64 bytes from 192.168.20.254: icmp_req=6 ttl=64 time=36787 ms
+64 bytes from 192.168.20.254: icmp_req=7 ttl=64 time=35786 ms
+64 bytes from 192.168.20.254: icmp_req=8 ttl=64 time=34781 ms
+64 bytes from 192.168.20.254: icmp_req=42 ttl=64 time=685 ms
+64 bytes from 192.168.20.254: icmp_req=43 ttl=64 time=19.0 ms
+64 bytes from 192.168.20.254: icmp_req=44 ttl=64 time=30.0 ms
+64 bytes from 192.168.20.254: icmp_req=45 ttl=64 time=11.5 ms
+64 bytes from 192.168.20.254: icmp_req=46 ttl=64 time=35.1 ms
+64 bytes from 192.168.20.254: icmp_req=47 ttl=64 time=24.9 ms
+64 bytes from 192.168.20.254: icmp_req=48 ttl=64 time=32.0 ms
+64 bytes from 192.168.20.254: icmp_req=49 ttl=64 time=7.46 ms
+64 bytes from 192.168.20.254: icmp_req=50 ttl=64 time=26.5 ms
+64 bytes from 192.168.20.254: icmp_req=51 ttl=64 time=34.4 ms
+
+
+Время прохождения пинга в худшем случае (матчинг по последнему permit правилу) -
+
+Пример - 
+ 
++++++++++++++++++++++++
+С Установкой потоков
+++++++++++++++++++++++++
+(100 1)шт.  - 480 0.2
+	      416 0.2
+
+
+Задержка при пинге не выявлена - ЛОГИЧНО
+
+
+(100 100)   - 540 0.2
+	      396 02
+
+PING 192.168.1.254 (192.168.1.254) 56(84) bytes of data.
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=4132 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=3125 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=2117 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=1113 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=105 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=15.9 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=30.2 ms
+64 bytes from 192.168.1.254: icmp_req=9 ttl=64 time=5.26 ms
+64 bytes from 192.168.1.254: icmp_req=10 ttl=64 time=4.68 ms
+64 bytes from 192.168.1.254: icmp_req=11 ttl=64 time=11.6 ms
+
+
+
+(200 1) 759 0.2
+	1090 250 0.2
+	835 0.2
+	800 0.2
+
+
+В пинге разницы нет.
+
+
+(200 100) 1049 284 0.2 Наверное не успевало устанавливаться правило до прихода пакета
+	  713 0.2
+	  948 0.2
+
+PING
+From 192.168.1.2 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=11 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=12 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=14 Destination Host Unreachable
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=13580 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=12584 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=11581 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=10574 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=9572 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=8565 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=7560 ms
+64 bytes from 192.168.1.254: icmp_req=15 ttl=64 time=555 ms
+64 bytes from 192.168.1.254: icmp_req=16 ttl=64 time=4.21 ms
+64 bytes from 192.168.1.254: icmp_req=17 ttl=64 time=12.0 ms
+
+
+From 192.168.1.2 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=11 Destination Host Unreachable
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=12900 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=11893 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=10887 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=9884 ms
+
+
+
+
+(200 200) 678 0.2
+	  889 0.2
+
+
+PING
+From 192.168.1.2 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=11 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=12 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=15 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=16 Destination Host Unreachable
+From 192.168.1.2 icmp_seq=17 Destination Host Unreachable
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=17562 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=16555 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=15548 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=14540 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=13534 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=12529 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=11522 ms
+64 bytes from 192.168.1.254: icmp_req=18 ttl=64 time=1476 ms
+64 bytes from 192.168.1.254: icmp_req=19 ttl=64 time=659 ms
+64 bytes from 192.168.1.254: icmp_req=20 ttl=64 time=39.0 ms
+
+
+(300 1) 937 537 0.2
+	800 500 0.2
+	1100 900 0.2
+
+
+Различия в пинге не выявлены
+
+(300 100) 1200 750 0.2
+	  930 250 0.2
+
+
+
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=23603 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=22597 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=21591 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=20588 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=19585 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=18579 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=17585 ms
+64 bytes from 192.168.1.254: icmp_req=24 ttl=64 time=1567 ms
+64 bytes from 192.168.1.254: icmp_req=25 ttl=64 time=560 ms
+64 bytes from 192.168.1.254: icmp_req=26 ttl=64 time=17.0 ms
+64 bytes from 192.168.1.254: icmp_req=27 ttl=64 time=26.1 ms
+
+(300 200) 1300 880 0.2
+	  950 250 0.2
+
+
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=35806 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=34800 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=33792 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=32793 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=31788 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=30785 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=29781 ms
+64 bytes from 192.168.1.254: icmp_req=36 ttl=64 time=1763 ms
+64 bytes from 192.168.1.254: icmp_req=37 ttl=64 time=754 ms
+64 bytes from 192.168.1.254: icmp_req=38 ttl=64 time=18.9 ms
+64 bytes from 192.168.1.254: icmp_req=39 ttl=64 time=26.2 ms
+64 bytes from 192.168.1.254: icmp_req=40 ttl=64 time=34.6 ms
+64 bytes from 192.168.1.254: icmp_req=41 ttl=64 time=11.9 ms
+
+
+
+
+(300 300) 1170 440 0.2
+
+
+64 bytes from 192.168.1.254: icmp_req=2 ttl=64 time=40919 ms
+64 bytes from 192.168.1.254: icmp_req=3 ttl=64 time=39943 ms
+64 bytes from 192.168.1.254: icmp_req=4 ttl=64 time=38938 ms
+64 bytes from 192.168.1.254: icmp_req=5 ttl=64 time=37938 ms
+64 bytes from 192.168.1.254: icmp_req=6 ttl=64 time=36943 ms
+64 bytes from 192.168.1.254: icmp_req=7 ttl=64 time=35938 ms
+64 bytes from 192.168.1.254: icmp_req=8 ttl=64 time=34950 ms
+64 bytes from 192.168.1.254: icmp_req=42 ttl=64 time=824 ms
+64 bytes from 192.168.1.254: icmp_req=43 ttl=64 time=8.84 ms
+
+
+
+При запихивании большого кол-ва правил и первого пермит, задержка при пинге отсутствует
+
+
++++++++++++++++++++++++++++++++++++++
+ТЕПЕРЬ БЕЗ УСТАНОВКИ ПРАВИЛ ПОТОКОВ
+++++++++++++++++++++++++++++++++++++++
+
+(100 1)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=46.2 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=73.7 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=53.6 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=76.4 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=49.7 ms
+
+
+
+(100 100)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=41.5 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=236 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=49.5 ms
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=19.7 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=20.6 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=66.6 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=57.7 ms
+
+(200 1)
+
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=41.3 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=71.7 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=72.5 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=61.6 ms
+
+
+(200 100)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=20.6 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=51.1 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=60.6 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=243 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=23.9 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=18.4 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=42.2 ms
+
+
+(200 200)
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=235 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=68.1 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=45.7 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=31.9 ms
+
+(300 1)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=21.5 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=42.3 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=34.3 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=49.3 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=34.4 ms
+
+(300 100)
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=23.5 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=64.4 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=25.8 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=52.6 ms
+
+
+
+
+
+200 шт. (1062 271 0.2) (285 0.2)
+300 шт. - (1203 782 0.203 ...) (214 0.2 ...) (92 0.2)
+	  (985 285 0.2 ...)
+	  (1237 831 ...) 
+
+
+500 шт. (2088 1569 0.2 ) (230) (241)   
+
+
+Время соединения при большом количестве уникальных потоков - 
+
+Пример - 
+(100 1) 
+
+без флагов
+431 0.2
+
+
+--fast
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=0.221 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=1545 ms
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=2870 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=0.201 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=0.197 ms
+
+
+
+
+(200 1)
+
+без флагов аналогично
+--fast
+
+
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=12253 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=11571 ms
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=13963 ms
+64 bytes from 192.168.1.2: icmp_req=15 ttl=64 time=0.186 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=11287 ms
+64 bytes from 192.168.1.2: icmp_req=16 ttl=64 time=0.210 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=11668 ms
+64 bytes from 192.168.1.2: icmp_req=17 ttl=64 time=0.182 ms
+64 bytes from 192.168.1.2: icmp_req=18 ttl=64 time=0.187 ms
+64 bytes from 192.168.1.2: icmp_req=19 ttl=64 time=0.192 ms
+64 bytes from 192.168.1.2: icmp_req=20 ttl=64 time=0.192 ms
+64 bytes from 192.168.1.2: icmp_req=21 ttl=64 time=0.189 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=15413 ms
+64 bytes from 192.168.1.2: icmp_req=22 ttl=64 time=0.196 ms
+
+
+
+
+
+
+
+(300 1) правил 
+
+hping3 без флагов
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=456 ms 348
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=0.190 ms 0.2
+
+
+--fast
+PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
+64 bytes from 192.168.1.2: icmp_req=10 ttl=64 time=0.210 ms
+64 bytes from 192.168.1.2: icmp_req=11 ttl=64 time=0.163 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=6471 ms
+64 bytes from 192.168.1.2: icmp_req=12 ttl=64 time=0.214 ms
+64 bytes from 192.168.1.2: icmp_req=13 ttl=64 time=0.202 ms
+64 bytes from 192.168.1.2: icmp_req=14 ttl=64 time=0.233 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=8358 ms
+64 bytes from 192.168.1.2: icmp_req=15 ttl=64 time=0.230 ms
+64 bytes from 192.168.1.2: icmp_req=16 ttl=64 time=0.222 ms
+64 bytes from 192.168.1.2: icmp_req=17 ttl=64 time=0.203 ms
+64 bytes from 192.168.1.2: icmp_req=18 ttl=64 time=0.191 ms
+64 bytes from 192.168.1.2: icmp_req=19 ttl=64 time=0.224 ms
+64 bytes from 192.168.1.2: icmp_req=20 ttl=64 time=0.215 ms
+64 bytes from 192.168.1.2: icmp_req=21 ttl=64 time=0.216 ms
+64 bytes from 192.168.1.2: icmp_req=22 ttl=64 time=0.221 ms
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=21498 ms
+64 bytes from 192.168.1.2: icmp_req=23 ttl=64 time=0.205 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=21262 ms
+64 bytes from 192.168.1.2: icmp_req=24 ttl=64 time=0.224 ms
+64 bytes from 192.168.1.2: icmp_req=25 ttl=64 time=0.220 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=18347 ms
+64 bytes from 192.168.1.2: icmp_req=26 ttl=64 time=0.232 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=23546 ms
+64 bytes from 192.168.1.2: icmp_req=27 ttl=64 time=0.220 ms
+64 bytes from 192.168.1.2: icmp_req=28 ttl=64 time=0.224 ms
+
+
+(400 1)
+без флагов все то же самое
+
+--fast 
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=2797 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=0.245 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=0.242 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=5157 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=1153 ms
+64 bytes from 192.168.1.2: icmp_req=8 ttl=64 time=153 ms
+64 bytes from 192.168.1.2: icmp_req=9 ttl=64 time=0.215 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=7969 ms
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=11459 ms
+64 bytes from 192.168.1.2: icmp_req=19 ttl=64 time=1782 ms
+64 bytes from 192.168.1.2: icmp_req=20 ttl=64 time=782 ms
+64 bytes from 192.168.1.2: icmp_req=21 ttl=64 time=0.297 ms
+
+
+
+
+++++++++++++++++++++++++++++++++++++
+Без установки потоков
+++++++++++++++++++++++++++++++++++++
+(100б 1)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=245 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=468 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=70.0 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=50.8 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=221 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=21.0 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=30.2 ms
+64 bytes from 192.168.1.2: icmp_req=8 ttl=64 time=25.1 ms
+64 bytes from 192.168.1.2: icmp_req=9 ttl=64 time=79.5 ms
+64 bytes from 192.168.1.2: icmp_req=10 ttl=64 time=228 ms
+64 bytes from 192.168.1.2: icmp_req=11 ttl=64 time=238 ms
+64 bytes from 192.168.1.2: icmp_req=12 ttl=64 time=227 ms
+64 bytes from 192.168.1.2: icmp_req=13 ttl=64 time=57.8 ms
+64 bytes from 192.168.1.2: icmp_req=14 ttl=64 time=273 ms
+
+
+--fast
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=193 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=194 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=195 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=394 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=394 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=295 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=396 ms
+64 bytes from 192.168.1.2: icmp_req=8 ttl=64 time=396 ms
+
+
+
+
+
+(200, 1)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=42.4 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=52.0 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=77.7 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=20.1 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=96.3 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=28.3 ms
+
+--fast
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=396 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=241 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=252 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=224 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=193 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=192 ms
+64 bytes from 192.168.1.2: icmp_req=7 ttl=64 time=192 ms
+64 bytes from 192.168.1.2: icmp_req=8 ttl=64 time=232 ms
+
+
+(300, 1)
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=260 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=252 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=244 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=241 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=242 ms
+
+--fast
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=324 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=323 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=322 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=154 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=130 ms
+
+
+
+(400, 1)
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=26.7 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=39.4 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=20.9 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=37.0 ms
+
+--fast
+
+
+64 bytes from 192.168.1.2: icmp_req=1 ttl=64 time=191 ms
+64 bytes from 192.168.1.2: icmp_req=2 ttl=64 time=191 ms
+64 bytes from 192.168.1.2: icmp_req=3 ttl=64 time=228 ms
+64 bytes from 192.168.1.2: icmp_req=4 ttl=64 time=217 ms
+64 bytes from 192.168.1.2: icmp_req=5 ttl=64 time=391 ms
+64 bytes from 192.168.1.2: icmp_req=6 ttl=64 time=289 ms
+
+
+
+0 шт. 
+len=46 ip=192.168.1.2 ttl=64 id=49633 icmp_seq=8 rtt=139.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49634 icmp_seq=9 rtt=102.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49635 icmp_seq=10 rtt=161.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49636 icmp_seq=11 rtt=102.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49637 icmp_seq=12 rtt=152.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49638 icmp_seq=13 rtt=102.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49639 icmp_seq=14 rtt=160.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49640 icmp_seq=15 rtt=102.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49641 icmp_seq=16 rtt=154.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49642 icmp_seq=17 rtt=103.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49643 icmp_seq=18 rtt=169.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49644 icmp_seq=19 rtt=102.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49645 icmp_seq=20 rtt=147.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49646 icmp_seq=21 rtt=103.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49647 icmp_seq=22 rtt=133.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49648 icmp_seq=23 rtt=158.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49649 icmp_seq=24 rtt=139.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49650 icmp_seq=25 rtt=114.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49651 icmp_seq=26 rtt=143.4 ms
+
+100 шт. 
+-len=46 ip=192.168.1.2 ttl=64 id=49700 icmp_seq=0 rtt=5275.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49701 icmp_seq=1 rtt=5179.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49702 icmp_seq=2 rtt=5081.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49703 icmp_seq=3 rtt=4983.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49704 icmp_seq=4 rtt=4886.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49705 icmp_seq=5 rtt=4788.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49706 icmp_seq=6 rtt=4690.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49707 icmp_seq=7 rtt=4592.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49708 icmp_seq=8 rtt=4493.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49709 icmp_seq=9 rtt=4396.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49710 icmp_seq=10 rtt=4298.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49711 icmp_seq=11 rtt=4200.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49712 icmp_seq=12 rtt=4102.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49713 icmp_seq=13 rtt=4004.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49714 icmp_seq=14 rtt=3910.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49715 icmp_seq=15 rtt=3815.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49716 icmp_seq=16 rtt=3718.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49717 icmp_seq=17 rtt=3625.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49718 icmp_seq=18 rtt=3533.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49719 icmp_seq=19 rtt=3439.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49720 icmp_seq=20 rtt=3350.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49721 icmp_seq=21 rtt=3257.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49722 icmp_seq=22 rtt=3159.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49723 icmp_seq=23 rtt=3060.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49724 icmp_seq=24 rtt=2961.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49725 icmp_seq=25 rtt=2863.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49726 icmp_seq=26 rtt=1766.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49727 icmp_seq=27 rtt=1668.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49728 icmp_seq=28 rtt=2570.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49729 icmp_seq=29 rtt=2471.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49730 icmp_seq=30 rtt=2373.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49731 icmp_seq=31 rtt=2277.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49732 icmp_seq=32 rtt=2179.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49733 icmp_seq=33 rtt=2081.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49734 icmp_seq=34 rtt=1983.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49735 icmp_seq=35 rtt=1885.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49736 icmp_seq=36 rtt=1787.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49737 icmp_seq=37 rtt=1689.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49738 icmp_seq=38 rtt=1591.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49739 icmp_seq=39 rtt=1494.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49740 icmp_seq=40 rtt=1396.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49741 icmp_seq=41 rtt=1298.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49742 icmp_seq=42 rtt=1200.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49743 icmp_seq=43 rtt=1102.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49744 icmp_seq=44 rtt=1005.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49745 icmp_seq=45 rtt=907.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49746 icmp_seq=46 rtt=808.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49747 icmp_seq=47 rtt=710.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49748 icmp_seq=48 rtt=611.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49749 icmp_seq=49 rtt=534.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49750 icmp_seq=50 rtt=437.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49751 icmp_seq=51 rtt=337.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49752 icmp_seq=52 rtt=254.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49753 icmp_seq=53 rtt=169.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49754 icmp_seq=54 rtt=102.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49755 icmp_seq=55 rtt=149.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49756 icmp_seq=56 rtt=102.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49757 icmp_seq=57 rtt=159.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49758 icmp_seq=58 rtt=105.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49759 icmp_seq=59 rtt=141.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49760 icmp_seq=60 rtt=102.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49761 icmp_seq=61 rtt=164.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49762 icmp_seq=62 rtt=106.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49763 icmp_seq=63 rtt=152.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49764 icmp_seq=64 rtt=126.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49765 icmp_seq=65 rtt=123.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49766 icmp_seq=66 rtt=153.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49767 icmp_seq=67 rtt=135.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49768 icmp_seq=68 rtt=158.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49769 icmp_seq=69 rtt=141.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49770 icmp_seq=70 rtt=116.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49771 icmp_seq=71 rtt=148.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49772 icmp_seq=72 rtt=139.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49773 icmp_seq=73 rtt=152.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49774 icmp_seq=74 rtt=127.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49775 icmp_seq=75 rtt=125.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49776 icmp_seq=76 rtt=151.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49777 icmp_seq=77 rtt=131.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49778 icmp_seq=78 rtt=158.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49779 icmp_seq=79 rtt=136.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49780 icmp_seq=80 rtt=105.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49781 icmp_seq=81 rtt=151.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49782 icmp_seq=82 rtt=141.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49783 icmp_seq=83 rtt=154.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49784 icmp_seq=84 rtt=133.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49785 icmp_seq=85 rtt=120.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49786 icmp_seq=86 rtt=148.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49787 icmp_seq=87 rtt=136.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49788 icmp_seq=88 rtt=176.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49789 icmp_seq=89 rtt=102.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49790 icmp_seq=90 rtt=154.8 ms
+
+200 шт. 
+len=46 ip=192.168.1.2 ttl=64 id=49823 icmp_seq=2 rtt=20933.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49824 icmp_seq=3 rtt=20834.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49825 icmp_seq=4 rtt=20740.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49826 icmp_seq=5 rtt=20642.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49827 icmp_seq=6 rtt=20553.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49828 icmp_seq=7 rtt=20455.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49829 icmp_seq=8 rtt=20357.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49830 icmp_seq=9 rtt=20259.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49831 icmp_seq=10 rtt=20160.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49832 icmp_seq=11 rtt=20062.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49833 icmp_seq=12 rtt=19965.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49834 icmp_seq=13 rtt=19870.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49835 icmp_seq=14 rtt=19773.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49836 icmp_seq=15 rtt=19678.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49837 icmp_seq=16 rtt=19581.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49838 icmp_seq=17 rtt=19491.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49839 icmp_seq=18 rtt=19403.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49840 icmp_seq=19 rtt=19307.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49841 icmp_seq=20 rtt=19221.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49842 icmp_seq=21 rtt=19123.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49843 icmp_seq=22 rtt=18026.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49844 icmp_seq=23 rtt=17928.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49845 icmp_seq=24 rtt=18830.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49846 icmp_seq=25 rtt=18732.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49847 icmp_seq=26 rtt=18634.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49848 icmp_seq=27 rtt=18543.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49849 icmp_seq=28 rtt=18446.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49850 icmp_seq=29 rtt=18350.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49851 icmp_seq=30 rtt=18252.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49852 icmp_seq=31 rtt=18155.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49853 icmp_seq=32 rtt=18057.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49854 icmp_seq=33 rtt=17959.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49855 icmp_seq=34 rtt=17863.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49856 icmp_seq=35 rtt=17766.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49857 icmp_seq=36 rtt=17668.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49858 icmp_seq=37 rtt=17571.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49859 icmp_seq=38 rtt=17474.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49860 icmp_seq=39 rtt=17376.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49861 icmp_seq=40 rtt=17281.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49862 icmp_seq=41 rtt=17210.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49863 icmp_seq=42 rtt=17113.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49864 icmp_seq=43 rtt=17020.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49865 icmp_seq=44 rtt=16923.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49866 icmp_seq=45 rtt=16833.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49867 icmp_seq=46 rtt=16736.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49868 icmp_seq=47 rtt=16639.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49869 icmp_seq=48 rtt=16545.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49870 icmp_seq=49 rtt=16448.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49871 icmp_seq=50 rtt=16349.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49872 icmp_seq=51 rtt=16262.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49873 icmp_seq=52 rtt=16165.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49874 icmp_seq=53 rtt=16069.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49875 icmp_seq=54 rtt=15974.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49876 icmp_seq=55 rtt=15878.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49877 icmp_seq=56 rtt=15779.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49878 icmp_seq=57 rtt=15680.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49879 icmp_seq=58 rtt=15581.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49880 icmp_seq=59 rtt=15483.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49881 icmp_seq=60 rtt=15386.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49882 icmp_seq=61 rtt=15291.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49883 icmp_seq=62 rtt=15195.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49884 icmp_seq=63 rtt=15105.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49885 icmp_seq=64 rtt=15008.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49886 icmp_seq=65 rtt=14917.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49887 icmp_seq=66 rtt=14818.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49888 icmp_seq=67 rtt=14721.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49889 icmp_seq=68 rtt=14624.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49890 icmp_seq=69 rtt=14524.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49891 icmp_seq=70 rtt=14424.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49892 icmp_seq=71 rtt=14340.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49893 icmp_seq=72 rtt=14240.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49894 icmp_seq=73 rtt=14140.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49895 icmp_seq=74 rtt=14040.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49896 icmp_seq=75 rtt=13940.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49897 icmp_seq=76 rtt=13840.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49898 icmp_seq=77 rtt=13740.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49899 icmp_seq=78 rtt=13640.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49900 icmp_seq=79 rtt=13540.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49901 icmp_seq=80 rtt=13440.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49902 icmp_seq=111 rtt=10339.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49903 icmp_seq=112 rtt=10242.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49904 icmp_seq=113 rtt=10142.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49905 icmp_seq=114 rtt=10054.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49906 icmp_seq=115 rtt=9955.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49907 icmp_seq=116 rtt=9855.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49908 icmp_seq=117 rtt=9755.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49909 icmp_seq=118 rtt=9657.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49910 icmp_seq=119 rtt=9572.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49911 icmp_seq=120 rtt=9476.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49912 icmp_seq=121 rtt=9380.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49913 icmp_seq=122 rtt=9282.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49914 icmp_seq=123 rtt=9182.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49915 icmp_seq=124 rtt=9082.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49916 icmp_seq=125 rtt=8983.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49917 icmp_seq=126 rtt=8883.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49918 icmp_seq=127 rtt=8783.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49919 icmp_seq=128 rtt=8689.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49920 icmp_seq=129 rtt=8589.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49921 icmp_seq=130 rtt=8489.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49922 icmp_seq=131 rtt=8393.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49923 icmp_seq=132 rtt=8294.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49924 icmp_seq=133 rtt=8194.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49925 icmp_seq=134 rtt=8094.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49926 icmp_seq=135 rtt=7995.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49927 icmp_seq=136 rtt=7911.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49928 icmp_seq=137 rtt=7812.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49929 icmp_seq=138 rtt=7712.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49930 icmp_seq=139 rtt=7613.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49931 icmp_seq=140 rtt=7515.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49932 icmp_seq=141 rtt=7417.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49933 icmp_seq=142 rtt=7317.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49934 icmp_seq=143 rtt=7218.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49935 icmp_seq=144 rtt=7118.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49936 icmp_seq=145 rtt=7018.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49937 icmp_seq=146 rtt=6918.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49938 icmp_seq=147 rtt=6819.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49939 icmp_seq=148 rtt=6729.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49940 icmp_seq=149 rtt=6630.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49941 icmp_seq=150 rtt=6530.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49942 icmp_seq=151 rtt=6430.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49943 icmp_seq=152 rtt=6331.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49944 icmp_seq=153 rtt=6231.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49945 icmp_seq=154 rtt=6131.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49946 icmp_seq=155 rtt=6031.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49947 icmp_seq=156 rtt=5932.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49948 icmp_seq=157 rtt=5833.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49949 icmp_seq=158 rtt=5733.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49950 icmp_seq=159 rtt=5650.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49951 icmp_seq=160 rtt=5550.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49952 icmp_seq=161 rtt=5450.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49953 icmp_seq=162 rtt=5351.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49954 icmp_seq=163 rtt=5251.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49955 icmp_seq=164 rtt=5151.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49956 icmp_seq=165 rtt=5051.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49957 icmp_seq=166 rtt=4952.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49958 icmp_seq=167 rtt=4852.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49959 icmp_seq=168 rtt=4752.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49960 icmp_seq=169 rtt=4652.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49961 icmp_seq=170 rtt=4564.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49962 icmp_seq=171 rtt=4464.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49963 icmp_seq=172 rtt=4364.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49964 icmp_seq=173 rtt=4264.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49965 icmp_seq=174 rtt=4164.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49966 icmp_seq=175 rtt=4065.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=49967 icmp_seq=176 rtt=3965.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49968 icmp_seq=177 rtt=3866.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49969 icmp_seq=178 rtt=3766.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49970 icmp_seq=179 rtt=3666.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49971 icmp_seq=180 rtt=3566.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49972 icmp_seq=181 rtt=3467.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49973 icmp_seq=182 rtt=3386.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49974 icmp_seq=183 rtt=3287.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49975 icmp_seq=184 rtt=3187.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49976 icmp_seq=185 rtt=3088.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49977 icmp_seq=186 rtt=2988.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49978 icmp_seq=187 rtt=2888.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49979 icmp_seq=188 rtt=2796.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49980 icmp_seq=189 rtt=2697.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49981 icmp_seq=190 rtt=2598.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49982 icmp_seq=191 rtt=2500.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=49983 icmp_seq=192 rtt=2409.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49984 icmp_seq=193 rtt=2311.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49985 icmp_seq=194 rtt=2214.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49986 icmp_seq=195 rtt=2119.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=49987 icmp_seq=196 rtt=2019.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49988 icmp_seq=197 rtt=1919.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49989 icmp_seq=198 rtt=1824.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=49990 icmp_seq=199 rtt=1725.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=49991 icmp_seq=200 rtt=1627.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49992 icmp_seq=201 rtt=1527.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49993 icmp_seq=202 rtt=1429.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49994 icmp_seq=203 rtt=1330.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=49995 icmp_seq=204 rtt=1232.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=49996 icmp_seq=205 rtt=1133.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=49997 icmp_seq=206 rtt=1034.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=49998 icmp_seq=207 rtt=935.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=49999 icmp_seq=208 rtt=836.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50000 icmp_seq=209 rtt=737.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50001 icmp_seq=210 rtt=638.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50002 icmp_seq=211 rtt=539.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50003 icmp_seq=212 rtt=442.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50004 icmp_seq=213 rtt=346.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50005 icmp_seq=214 rtt=250.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50006 icmp_seq=215 rtt=203.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50007 icmp_seq=216 rtt=246.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50008 icmp_seq=217 rtt=203.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50009 icmp_seq=218 rtt=251.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50010 icmp_seq=219 rtt=203.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50011 icmp_seq=220 rtt=248.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50012 icmp_seq=221 rtt=203.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50013 icmp_seq=222 rtt=249.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50014 icmp_seq=223 rtt=203.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50015 icmp_seq=224 rtt=228.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50016 icmp_seq=225 rtt=203.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50017 icmp_seq=226 rtt=224.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50018 icmp_seq=227 rtt=202.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50019 icmp_seq=228 rtt=242.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50020 icmp_seq=229 rtt=202.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50021 icmp_seq=230 rtt=238.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50022 icmp_seq=231 rtt=203.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50023 icmp_seq=232 rtt=247.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50024 icmp_seq=233 rtt=202.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50025 icmp_seq=234 rtt=218.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50026 icmp_seq=235 rtt=130.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50027 icmp_seq=236 rtt=182.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50028 icmp_seq=237 rtt=131.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50029 icmp_seq=238 rtt=110.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50030 icmp_seq=239 rtt=143.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50031 icmp_seq=240 rtt=120.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50032 icmp_seq=241 rtt=181.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50033 icmp_seq=242 rtt=133.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50034 icmp_seq=243 rtt=165.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50035 icmp_seq=244 rtt=144.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50036 icmp_seq=245 rtt=132.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50037 icmp_seq=246 rtt=170.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50038 icmp_seq=247 rtt=145.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50039 icmp_seq=248 rtt=117.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50040 icmp_seq=249 rtt=149.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50041 icmp_seq=250 rtt=127.4 ms
+
+300 шт
+len=46 ip=192.168.1.2 ttl=64 id=50050 icmp_seq=7 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50051 icmp_seq=8 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50052 icmp_seq=9 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50053 icmp_seq=10 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50054 icmp_seq=11 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50055 icmp_seq=12 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50056 icmp_seq=13 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50057 icmp_seq=14 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50058 icmp_seq=15 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50059 icmp_seq=16 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50060 icmp_seq=17 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50061 icmp_seq=18 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50062 icmp_seq=19 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50063 icmp_seq=20 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50064 icmp_seq=21 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50065 icmp_seq=22 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50066 icmp_seq=23 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50067 icmp_seq=24 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50068 icmp_seq=25 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50069 icmp_seq=37 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50070 icmp_seq=38 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50071 icmp_seq=39 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50072 icmp_seq=40 rtt=40015.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50073 icmp_seq=41 rtt=39916.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50074 icmp_seq=42 rtt=39866.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50075 icmp_seq=43 rtt=39768.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50076 icmp_seq=44 rtt=39681.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50077 icmp_seq=45 rtt=39583.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50078 icmp_seq=46 rtt=39486.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50079 icmp_seq=47 rtt=39389.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50080 icmp_seq=48 rtt=39292.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50081 icmp_seq=49 rtt=39195.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50082 icmp_seq=50 rtt=39101.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50083 icmp_seq=51 rtt=39007.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50084 icmp_seq=52 rtt=38908.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50085 icmp_seq=53 rtt=38809.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50086 icmp_seq=54 rtt=38710.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50087 icmp_seq=55 rtt=38610.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50088 icmp_seq=56 rtt=38510.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50090 icmp_seq=58 rtt=38311.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50091 icmp_seq=59 rtt=38211.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50092 icmp_seq=60 rtt=38112.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50093 icmp_seq=61 rtt=38013.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50094 icmp_seq=62 rtt=37913.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50095 icmp_seq=63 rtt=37814.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50096 icmp_seq=64 rtt=37714.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50097 icmp_seq=65 rtt=37614.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50098 icmp_seq=66 rtt=37517.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50099 icmp_seq=67 rtt=37455.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50100 icmp_seq=68 rtt=37357.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50101 icmp_seq=69 rtt=37259.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50102 icmp_seq=70 rtt=37162.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50103 icmp_seq=71 rtt=37064.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50104 icmp_seq=72 rtt=36966.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50105 icmp_seq=73 rtt=36868.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50106 icmp_seq=74 rtt=36770.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50107 icmp_seq=75 rtt=36672.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50108 icmp_seq=76 rtt=36573.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50109 icmp_seq=77 rtt=36474.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50110 icmp_seq=78 rtt=36375.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50111 icmp_seq=171 rtt=27070.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50112 icmp_seq=172 rtt=26971.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50113 icmp_seq=173 rtt=26871.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50114 icmp_seq=174 rtt=26772.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50115 icmp_seq=175 rtt=26673.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50116 icmp_seq=176 rtt=26573.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50117 icmp_seq=177 rtt=26474.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50118 icmp_seq=178 rtt=26376.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50119 icmp_seq=179 rtt=26278.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50120 icmp_seq=180 rtt=26181.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50121 icmp_seq=181 rtt=26090.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50122 icmp_seq=182 rtt=25996.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50123 icmp_seq=183 rtt=25898.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50124 icmp_seq=184 rtt=25799.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50126 icmp_seq=186 rtt=25643.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50127 icmp_seq=187 rtt=25546.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50128 icmp_seq=188 rtt=25448.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50129 icmp_seq=189 rtt=25350.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50130 icmp_seq=190 rtt=25252.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50131 icmp_seq=191 rtt=25154.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50132 icmp_seq=192 rtt=25057.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50133 icmp_seq=193 rtt=24958.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50134 icmp_seq=194 rtt=24860.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50135 icmp_seq=195 rtt=24763.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50136 icmp_seq=196 rtt=24665.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50137 icmp_seq=197 rtt=24567.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50138 icmp_seq=198 rtt=24469.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50139 icmp_seq=199 rtt=24371.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50140 icmp_seq=200 rtt=24272.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50141 icmp_seq=201 rtt=24173.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50142 icmp_seq=202 rtt=24074.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50143 icmp_seq=203 rtt=23974.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50144 icmp_seq=204 rtt=23875.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50145 icmp_seq=205 rtt=23775.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50146 icmp_seq=206 rtt=23676.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50147 icmp_seq=207 rtt=23576.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50148 icmp_seq=208 rtt=23476.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50149 icmp_seq=209 rtt=23376.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50150 icmp_seq=210 rtt=23277.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50151 icmp_seq=211 rtt=23186.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50152 icmp_seq=212 rtt=23087.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50153 icmp_seq=213 rtt=23004.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50154 icmp_seq=214 rtt=22904.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50155 icmp_seq=215 rtt=22804.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50156 icmp_seq=216 rtt=22704.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50157 icmp_seq=217 rtt=22604.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50158 icmp_seq=218 rtt=22504.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50159 icmp_seq=219 rtt=22404.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50160 icmp_seq=220 rtt=22304.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50161 icmp_seq=221 rtt=22204.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50162 icmp_seq=222 rtt=22104.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50163 icmp_seq=223 rtt=22005.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50164 icmp_seq=224 rtt=21906.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50165 icmp_seq=225 rtt=21812.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50166 icmp_seq=226 rtt=21714.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50167 icmp_seq=227 rtt=21616.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50168 icmp_seq=228 rtt=21518.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50169 icmp_seq=229 rtt=21423.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50170 icmp_seq=230 rtt=21326.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50171 icmp_seq=231 rtt=21231.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50172 icmp_seq=232 rtt=21134.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50173 icmp_seq=233 rtt=21035.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50174 icmp_seq=234 rtt=20936.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50175 icmp_seq=235 rtt=20836.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50176 icmp_seq=236 rtt=20742.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50177 icmp_seq=237 rtt=20642.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50178 icmp_seq=238 rtt=20542.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50179 icmp_seq=239 rtt=20446.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50180 icmp_seq=240 rtt=20346.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50181 icmp_seq=241 rtt=20246.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50182 icmp_seq=242 rtt=20147.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50183 icmp_seq=243 rtt=20047.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50184 icmp_seq=244 rtt=19948.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50185 icmp_seq=245 rtt=19849.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50186 icmp_seq=246 rtt=19751.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50187 icmp_seq=247 rtt=19652.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50188 icmp_seq=248 rtt=19556.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50189 icmp_seq=249 rtt=19460.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50190 icmp_seq=250 rtt=19361.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50191 icmp_seq=251 rtt=19267.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50193 icmp_seq=253 rtt=19067.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50194 icmp_seq=254 rtt=18967.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50195 icmp_seq=255 rtt=18872.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50196 icmp_seq=256 rtt=18772.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50197 icmp_seq=257 rtt=18672.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50198 icmp_seq=258 rtt=18573.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50199 icmp_seq=259 rtt=18473.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50200 icmp_seq=260 rtt=18373.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50201 icmp_seq=261 rtt=18273.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50202 icmp_seq=262 rtt=18174.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50203 icmp_seq=263 rtt=18074.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50204 icmp_seq=264 rtt=17974.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50205 icmp_seq=265 rtt=17875.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50206 icmp_seq=266 rtt=17775.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50207 icmp_seq=267 rtt=17675.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50208 icmp_seq=268 rtt=17575.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50209 icmp_seq=269 rtt=17475.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50210 icmp_seq=270 rtt=17388.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50211 icmp_seq=271 rtt=17288.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50212 icmp_seq=272 rtt=17189.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50213 icmp_seq=273 rtt=17090.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50214 icmp_seq=274 rtt=16990.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50215 icmp_seq=275 rtt=16891.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50216 icmp_seq=276 rtt=16791.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50217 icmp_seq=277 rtt=16691.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50218 icmp_seq=278 rtt=16591.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50219 icmp_seq=279 rtt=16492.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50220 icmp_seq=280 rtt=16402.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50221 icmp_seq=281 rtt=16302.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50222 icmp_seq=282 rtt=16203.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50223 icmp_seq=283 rtt=16103.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50224 icmp_seq=284 rtt=16003.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50225 icmp_seq=285 rtt=15903.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50226 icmp_seq=286 rtt=15804.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50227 icmp_seq=287 rtt=15704.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50228 icmp_seq=288 rtt=15604.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50229 icmp_seq=289 rtt=15513.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50230 icmp_seq=290 rtt=15413.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50231 icmp_seq=291 rtt=15313.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50232 icmp_seq=292 rtt=15214.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50233 icmp_seq=293 rtt=15114.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50234 icmp_seq=294 rtt=15014.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50235 icmp_seq=295 rtt=14925.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50236 icmp_seq=296 rtt=14825.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50237 icmp_seq=297 rtt=14725.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50238 icmp_seq=298 rtt=14625.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50239 icmp_seq=299 rtt=14525.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50240 icmp_seq=300 rtt=14426.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50241 icmp_seq=301 rtt=14326.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50242 icmp_seq=302 rtt=14227.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50243 icmp_seq=303 rtt=14127.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50244 icmp_seq=304 rtt=14027.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50245 icmp_seq=305 rtt=13928.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50246 icmp_seq=306 rtt=13828.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50247 icmp_seq=307 rtt=13741.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50248 icmp_seq=308 rtt=13641.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50249 icmp_seq=309 rtt=13540.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50250 icmp_seq=310 rtt=13440.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50251 icmp_seq=311 rtt=13340.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50252 icmp_seq=312 rtt=13240.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50253 icmp_seq=313 rtt=13140.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50254 icmp_seq=314 rtt=13040.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50255 icmp_seq=315 rtt=12940.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50256 icmp_seq=316 rtt=12841.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50257 icmp_seq=317 rtt=12742.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50258 icmp_seq=318 rtt=12644.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50259 icmp_seq=319 rtt=12582.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50260 icmp_seq=320 rtt=12486.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50261 icmp_seq=321 rtt=12389.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50262 icmp_seq=322 rtt=12289.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50263 icmp_seq=323 rtt=12193.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50264 icmp_seq=324 rtt=12095.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50265 icmp_seq=325 rtt=11995.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50266 icmp_seq=326 rtt=11896.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50267 icmp_seq=327 rtt=11796.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50268 icmp_seq=328 rtt=11696.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50269 icmp_seq=329 rtt=11602.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50270 icmp_seq=330 rtt=11506.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50271 icmp_seq=331 rtt=11406.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50272 icmp_seq=332 rtt=11306.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50273 icmp_seq=333 rtt=11207.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50274 icmp_seq=334 rtt=11107.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50275 icmp_seq=335 rtt=11007.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50276 icmp_seq=336 rtt=10907.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50277 icmp_seq=337 rtt=10808.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50278 icmp_seq=338 rtt=10708.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50279 icmp_seq=339 rtt=10610.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50280 icmp_seq=340 rtt=10510.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50281 icmp_seq=341 rtt=10410.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50282 icmp_seq=342 rtt=10311.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50283 icmp_seq=343 rtt=10211.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50284 icmp_seq=344 rtt=10111.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50285 icmp_seq=345 rtt=10012.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50287 icmp_seq=347 rtt=9813.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50288 icmp_seq=348 rtt=9714.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50289 icmp_seq=349 rtt=9616.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50290 icmp_seq=350 rtt=9517.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50291 icmp_seq=351 rtt=9417.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50292 icmp_seq=352 rtt=9318.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50293 icmp_seq=353 rtt=9218.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50294 icmp_seq=354 rtt=9118.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50295 icmp_seq=355 rtt=9019.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50296 icmp_seq=356 rtt=8920.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50297 icmp_seq=357 rtt=8820.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50298 icmp_seq=359 rtt=8644.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50299 icmp_seq=360 rtt=8544.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50300 icmp_seq=366 rtt=7944.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50301 icmp_seq=368 rtt=7744.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50302 icmp_seq=369 rtt=7644.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50303 icmp_seq=371 rtt=7444.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50304 icmp_seq=373 rtt=7245.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50305 icmp_seq=374 rtt=7145.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50306 icmp_seq=375 rtt=7045.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50307 icmp_seq=376 rtt=6945.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50308 icmp_seq=377 rtt=6846.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50309 icmp_seq=378 rtt=6746.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50310 icmp_seq=379 rtt=6646.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50311 icmp_seq=380 rtt=6546.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50312 icmp_seq=381 rtt=6447.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50313 icmp_seq=382 rtt=6347.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50314 icmp_seq=383 rtt=6247.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50315 icmp_seq=384 rtt=6147.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50316 icmp_seq=385 rtt=6048.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50317 icmp_seq=386 rtt=5948.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50318 icmp_seq=387 rtt=5849.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50319 icmp_seq=389 rtt=5650.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50320 icmp_seq=390 rtt=5550.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50321 icmp_seq=392 rtt=5350.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50322 icmp_seq=394 rtt=5150.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50323 icmp_seq=403 rtt=4250.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50324 icmp_seq=417 rtt=2849.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50325 icmp_seq=421 rtt=2449.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50326 icmp_seq=433 rtt=1250.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50327 icmp_seq=435 rtt=1050.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50328 icmp_seq=436 rtt=952.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50329 icmp_seq=437 rtt=867.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50330 icmp_seq=438 rtt=769.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50331 icmp_seq=439 rtt=671.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50332 icmp_seq=440 rtt=573.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50333 icmp_seq=441 rtt=476.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50334 icmp_seq=442 rtt=378.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50335 icmp_seq=443 rtt=288.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50336 icmp_seq=444 rtt=192.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50337 icmp_seq=445 rtt=105.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50338 icmp_seq=446 rtt=164.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50339 icmp_seq=447 rtt=102.5 ms
+
+
+500 шт. -
+len=46 ip=192.168.1.2 ttl=64 id=50578 icmp_seq=633 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50579 icmp_seq=637 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50580 icmp_seq=640 rtt=0.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50581 icmp_seq=1193 rtt=2346.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50582 icmp_seq=1194 rtt=2246.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50583 icmp_seq=1195 rtt=2146.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50584 icmp_seq=1196 rtt=2046.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50585 icmp_seq=1197 rtt=1959.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50586 icmp_seq=1198 rtt=1859.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50587 icmp_seq=1199 rtt=1759.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50588 icmp_seq=1200 rtt=1659.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50589 icmp_seq=1201 rtt=1559.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50590 icmp_seq=1202 rtt=1459.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50591 icmp_seq=1203 rtt=1359.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50592 icmp_seq=1204 rtt=1259.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50593 icmp_seq=1205 rtt=1159.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50594 icmp_seq=1206 rtt=1060.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50595 icmp_seq=1207 rtt=968.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50596 icmp_seq=1208 rtt=873.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50597 icmp_seq=1209 rtt=774.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50598 icmp_seq=1210 rtt=705.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50599 icmp_seq=1211 rtt=605.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50600 icmp_seq=1212 rtt=633.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50601 icmp_seq=1213 rtt=546.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50602 icmp_seq=1214 rtt=502.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50603 icmp_seq=1215 rtt=403.0 ms
+len=46 ip=192.168.1.2 ttl=64 id=50604 icmp_seq=1216 rtt=441.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50605 icmp_seq=1217 rtt=351.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50606 icmp_seq=1218 rtt=256.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50607 icmp_seq=1219 rtt=202.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50608 icmp_seq=1220 rtt=253.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50609 icmp_seq=1221 rtt=202.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50610 icmp_seq=1222 rtt=252.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50611 icmp_seq=1223 rtt=202.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50612 icmp_seq=1224 rtt=232.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50613 icmp_seq=1225 rtt=202.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50614 icmp_seq=1226 rtt=227.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50615 icmp_seq=1227 rtt=203.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50616 icmp_seq=1228 rtt=112.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50617 icmp_seq=1229 rtt=145.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50618 icmp_seq=1230 rtt=125.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50619 icmp_seq=1231 rtt=168.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50620 icmp_seq=1232 rtt=140.3 ms
+len=46 ip=192.168.1.2 ttl=64 id=50621 icmp_seq=1233 rtt=123.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50622 icmp_seq=1234 rtt=130.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50623 icmp_seq=1235 rtt=166.6 ms
+len=46 ip=192.168.1.2 ttl=64 id=50624 icmp_seq=1236 rtt=153.7 ms
+len=46 ip=192.168.1.2 ttl=64 id=50625 icmp_seq=1237 rtt=151.8 ms
+len=46 ip=192.168.1.2 ttl=64 id=50626 icmp_seq=1238 rtt=123.4 ms
+len=46 ip=192.168.1.2 ttl=64 id=50627 icmp_seq=1239 rtt=151.5 ms
+len=46 ip=192.168.1.2 ttl=64 id=50628 icmp_seq=1240 rtt=126.9 ms
+len=46 ip=192.168.1.2 ttl=64 id=50629 icmp_seq=1241 rtt=157.1 ms
+len=46 ip=192.168.1.2 ttl=64 id=50630 icmp_seq=1242 rtt=132.2 ms
+len=46 ip=192.168.1.2 ttl=64 id=50631 icmp_seq=1243 rtt=119.8 ms
+
+
+
+1000 шт. -
+5000 шт. -
